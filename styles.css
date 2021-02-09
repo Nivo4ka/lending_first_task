@@ -1,82 +1,149 @@
 body {
-    /* background-color: lightsalmon; */
-    /* background: #E5E5E5; */
+    width: 100%;
+    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
 }
-.first {
-    position: absolute;
-    width: 1920px;
+
+header {
+    width: 100%;
     height: 700px;
-    left: 0px;
-    top: -7px;
     background: #EEEFF1;
 }
-.wd {
-    position: absolute;
+
+h3 {
+    margin: 0;
+}
+
+.logo {
     width: 96px;
     height: 60px;
     left: 402px;
     top: 50px;
-
-    font-family: Revalia; /* нужно как-то скачать этот шрифт*/
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 60px;
-    text-align: center;
-    color: #34547A;
 }
-.design_style1 {
-    position: absolute;
-    width: 541px;
-    height: 45px;
-    left: 974px;
-    top: 250px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 79px;
-    color: #000000;
+.container {
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1050px;
 }
-.design_style2 {
-    position: absolute;
-    width: 540px;
-    height: 67px;
-    left: 975px;
-    top: 355px;
 
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 57px;
+}
+
+ul.menu {
+    margin: 0;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+ul.menu li {
+    display: inline;
+    margin-right: 42px;
+    white-space: nowrap;
+}
+
+ul.menu li:last-child {
+    margin-right: 0px;
+}
+
+ul.menu li:hover {
+    color: #34547A;
+    cursor: pointer;
+}
+
+.image {
+    width: 357px;
+    height: 233.7px;
+}
+
+.header_information {
+    margin-top: 10%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.design_style1 {
+    margin: -7% 0 0 0;
+    width: 541px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+    color: #000000;
+}
+
+.design_style2 {
+    margin: 8% 0 9% 0;
+    width: 540px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
     color: #727272;
 }
+
+.btn {
+    border: 0;
+    width: 225px;
+height: 65px;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.1em;
+color: #FFFFFF;
+background: #34547A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .about_me {
     position: absolute;
     width: 403px;
     height: 30px;
     left: 758px;
     top: 812px;
-
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 37px;
     text-align: center;
     color: #000000;
 }
+
 .about_me_text {
     position: absolute;
     width: 540px;
     height: 67px;
     left: 690px;
     top: 892px;
-/* p */
-    font-family: Roboto;
-    font-style: normal;
+    /* p */
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
@@ -84,42 +151,75 @@ body {
     color: #727272;
 }
 
-.void {
-    
-}
+.void {}
+
 .second {
     position: absolute;
     width: 1920px;
     height: 250px;
     left: 0px;
     top: 1059px;
-
     background: #34547A;
 }
+
+.project {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+}
+
+ul.list {
+    margin: 0;
+    position: absolute;
+    left: 405px;
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+}
+
+ul.list li {
+    display: flex;
+    margin-right: 49px;
+}
+
+ul.list li span1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+.ul.list li span2 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
 .work {
     position: absolute;
     width: 1920px;
     height: 1004px;
     left: 0px;
     top: 1962px;
-/* Silver */
+    /* Silver */
     background: #EEEFF1;
 }
-.work_me {
 
-}
+.work_me {}
+
 .work_text {
     position: absolute;
-width: 540px;
-height: 67px;
-left: 690px;
-top: 2142px;
-color: #727272;
+    width: 540px;
+    height: 67px;
+    left: 690px;
+    top: 2142px;
+    color: #727272;
 }
-
 
 .j {
     height: 700px;
     font-size: 25px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
