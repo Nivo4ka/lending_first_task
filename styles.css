@@ -15,13 +15,6 @@ h3 {
     margin: 0;
 }
 
-.logo {
-    width: 96px;
-    height: 60px;
-    left: 402px;
-    top: 50px;
-}
-
 .container {
     width: 100%;
     height: 100%;
@@ -29,6 +22,8 @@ h3 {
     margin-left: auto;
     max-width: 1050px;
 }
+
+
 
 .navigation {
     display: flex;
@@ -69,16 +64,19 @@ ul.menu li:hover {
 }
 
 .header_information {
-    margin-top: 10%;
+    margin-top: 15%;
     margin-left: 5%;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
+}
+
+.design {
+    margin-left: 6%;
 }
 
 .design_style1 {
     margin: -7% 0 0 0;
-    width: 541px;
     font-weight: 500;
     font-size: 48px;
     line-height: 79px;
@@ -87,7 +85,6 @@ ul.menu li:hover {
 
 .design_style2 {
     margin: 8% 0 9% 0;
-    width: 540px;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
@@ -97,39 +94,29 @@ ul.menu li:hover {
 .btn {
     border: 0;
     width: 225px;
-height: 65px;
-font-weight: normal;
-font-size: 16px;
-line-height: 26px;
-text-align: center;
-letter-spacing: 0.1em;
-color: #FFFFFF;
-background: #34547A;
+    height: 65px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    background: #34547A;
+}
+.btn:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+.btn:focus { /*----------------------------------------------------------------*/
+    border: 0;
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .about_me {
-    position: absolute;
-    width: 403px;
-    height: 30px;
-    left: 758px;
-    top: 812px;
+    margin: 8% 0 8% 0;
+    text-align: -webkit-center;
+}
+.about_me_title {
     font-weight: 500;
     font-size: 32px;
     line-height: 37px;
@@ -138,12 +125,8 @@ background: #34547A;
 }
 
 .about_me_text {
-    position: absolute;
-    width: 540px;
-    height: 67px;
-    left: 690px;
-    top: 892px;
-    /* p */
+    max-width: 540px;
+    width: 100%;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
@@ -151,14 +134,11 @@ background: #34547A;
     color: #727272;
 }
 
-.void {}
-
-.second {
-    position: absolute;
-    width: 1920px;
+.numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     height: 250px;
-    left: 0px;
-    top: 1059px;
     background: #34547A;
 }
 
@@ -168,13 +148,16 @@ background: #34547A;
     margin-right: 16px;
 }
 
+.numbers .container {
+    display: flex;
+}
+
 ul.list {
+    padding-inline-start: 0;
     margin: 0;
-    position: absolute;
-    left: 405px;
-    top: 100px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     color: #FFFFFF;
 }
 
@@ -197,8 +180,11 @@ ul.list li span1 {
     line-height: 26px;
 }
 
+.ul.list li:last-child {
+    margin-right: 0;
+}
+
 .work {
-    position: absolute;
     width: 1920px;
     height: 1004px;
     left: 0px;
@@ -210,7 +196,6 @@ ul.list li span1 {
 .work_me {}
 
 .work_text {
-    position: absolute;
     width: 540px;
     height: 67px;
     left: 690px;
