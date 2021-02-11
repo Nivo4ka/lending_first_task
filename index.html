@@ -12,7 +12,7 @@
   <header>
     <div class="container">
       <nav class="navigation">
-        <img src="pictures/WD.svg">
+        <img class="logo" src="pictures/WD.svg">
         <ul class="menu">
           <li>ГЛАВНАЯ</li>
           <li>ОБ АВТОРЕ</li>
@@ -45,6 +45,7 @@
 
   <section class="numbers">
     <div class="container">
+      <!-- <div class="numbers_list"> -->
       <ul class="list">
         <li>
           <img class="list_item" src="pictures/Group.svg">
@@ -108,17 +109,19 @@
           </div>
         </li>
       </ul>
+      <!-- </div> -->
     </div>
   </section>
 
 
   <section class="skills">
     <div class="container">
-      <dir style="margin-bottom: 6%; padding-right: 8%;">
+      <div class="skills_list">
         <h2 class="skills_title">Мои навыки</h2>
         <ul class="skills_text">
           <li>
             <p>Adobe Photoshop</p>
+
             <img class="skills_item" src="pictures/Rectangle 4.svg">
             <!-- <img class="" src="pictures/Rectangle 4.1.svg"> -->
           </li>
@@ -133,7 +136,7 @@
             <!-- <img class="" src="pictures/Rectangle 4.1.svg"> -->
           </li>
         </ul>
-      </dir>
+      </div>
       <img class="skills_item" src="pictures/man.svg">
     </div>
   </section>
@@ -144,7 +147,13 @@
       <h2 class="video_title">Как я работаю</h2>
       <p class="video_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
         Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-      <img class="video_item" src="pictures/code.svg">
+      <div class="cont">
+        <img class="video_item" src="pictures/code.svg">
+        <div class="overlay">
+          <img class="icon" src="pictures/play-button.svg">
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -152,20 +161,68 @@
   <section class="projects">
     <div class="projects_row">
       <div class="projects_column">
-        <img class="projects_picture" src="pictures/notes.svg" max-wigth:480px />
-        <img class="projects_picture" src="pictures/work.svg" max-wigth:480px />
+        <div class="cont">
+          <img class="projects_picture" src="pictures/notes.svg">
+          <div class="overlay">
+            <img class="icon" src="pictures/view.svg">
+            </a>
+          </div>
+        </div>
+        <div class="cont">
+          <img class="projects_picture" src="pictures/work.svg">
+          <div class="overlay">
+            <img class="icon" src="pictures/view.svg">
+            </a>
+          </div>
+        </div>
       </div>
       <div class="projects_column">
-        <img class="projects_picture" src="pictures/work.svg" max-wigth:480px />
-        <img class="projects_picture" src="pictures/notes.svg" max-wigth:480px />
+        <div class="cont">
+          <img class="projects_picture" src="pictures/work.svg">
+          <div class="overlay">
+            <img class="icon" src="pictures/view.svg">
+            </a>
+          </div>
+        </div>
+        <div class="cont">
+          <img class="projects_picture" src="pictures/notes.svg">
+          <div class="overlay">
+            <img class="icon" src="pictures/view.svg">
+            </a>
+          </div>
+        </div>
       </div>
       <div class="projects_column">
-        <img class="projects_picture" src="pictures/notes.svg" max-wigth:480px />
-        <img class="projects_picture" src="pictures/work.svg" max-wigth:480px />
+        <div class="cont">
+          <img class="projects_picture" src="pictures/notes.svg">
+          <div class="overlay">
+            <img class="icon" src="pictures/view.svg">
+            </a>
+          </div>
+        </div>
+        <div class="cont">
+          <img class="projects_picture" src="pictures/work.svg">
+          <div class="overlay">
+            <img class="icon" src="pictures/view.svg">
+            </a>
+          </div>
+        </div>
       </div>
       <div class="projects_column">
-        <img class="projects_picture" src="pictures/work.svg" max-wigth:480px />
-        <img class="projects_picture" src="pictures/notes.svg" max-wigth:480px />
+        <div class="cont">
+          <img class="projects_picture" src="pictures/work.svg">
+          <div class="overlay">
+            <img class="icon" src="pictures/view.svg">
+            </a>
+          </div>
+        </div>
+        <div class="cont">
+          <img class="projects_picture" src="pictures/notes.svg">
+          <div class="overlay">
+            <img class="icon" src="pictures/view.svg">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -176,14 +233,15 @@
       Хотите веб-сайт?
     </h2>
     <p class="form_text">
-      Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+      Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
       Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
     </p>
     <div class="form_info">
       <input class="form_info_item" type="text" placeholder="Ваше имя">
       <input class="form_info_item" type="text" placeholder="Ваш e-mail">
     </div>
-    <input class="message" value placeholder="Сообщение">
+    <textarea class="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+    <!-- <input class="message" value placeholder="Сообщение"> -->
     <button class="btn">ОТПРАВИТЬ</button>
   </section>
 
@@ -193,10 +251,10 @@
         <h3 class="footer_title">Иванов Иван</h3>
         <p>(с) 2018. Все права защищены.</p>
       </div>
-      <div>
-          <img class="footer_item" src="pictures/vk.svg">
-          <img class="footer_item" src="pictures/vk.svg">
-          <img class="footer_item" src="pictures/vk.svg">
+      <div class="footer_items">
+        <img class="footer_item" src="pictures/vk.svg">
+        <img class="footer_item" src="pictures/vk.svg">
+        <img class="footer_item" src="pictures/vk.svg">
       </div>
     </div>
   </footer>
